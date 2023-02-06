@@ -1,0 +1,104 @@
+body {
+  margin:0;
+  background-color: black;
+}
+.outer {
+  width: 220px;
+  height: 220px;
+  margin: 10px auto;
+  position:relative;
+  border-radius: 110px;
+
+}
+.mask {
+  position:absolute;
+  top: 55px;
+  width: 220px;
+  height: 110px;
+  overflow: hidden;
+	/* Firefox */
+	-moz-transition: all 0.6s ease;
+	/* WebKit */
+	-webkit-transition: all 0.6s ease;
+	/* Opera */
+	-o-transition: all 0.6s ease;
+	/* Standard */
+	transition: all 0.6s ease;
+}
+.outer:hover .mask {
+transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg); 
+height: 220px;
+  top: 0;
+}
+.ring {
+  position: absolute;
+  top:-55px;
+  width: 200px;
+  height: 200px;
+  border: solid 10px #3e4eca;
+  border-radius: 120px;
+  
+	/* Firefox */
+	-moz-transition: all 0.6s ease;
+	/* WebKit */
+	-webkit-transition: all 0.6s ease;
+	/* Opera */
+	-o-transition: all 0.6s ease;
+	/* Standard */
+	transition: all 0.6s ease;
+}
+
+.outer:hover .ring {
+  top: 0px;
+  transform: translateY(2px);
+}
+.btn-push {
+  position: relative;
+  top: 0px;
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-size: 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  
+ 
+  color: white;
+  text-shadow: 1px 1px 1px #fff;
+  -webkit-transition: All 250ms ease;
+  -moz-transition: All 250ms ease;
+  -o-transition: All 250ms ease;
+  -ms-transition: All 250ms ease;
+  transition: All 250ms ease;
+}
+/*==========  Active State  ==========*/
+.btn-push:active {
+  position: relative;
+  top: 5px;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: All 250ms ease;
+  -moz-transition: All 250ms ease;
+  -o-transition: All 250ms ease;
+  -ms-transition: All 250ms ease;
+  transition: All 250ms ease;
+}
+
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
